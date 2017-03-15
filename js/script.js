@@ -82,17 +82,17 @@ function replaceShare() {
 		this.originitialize(options);
 		var view = this;
 		this.model.on('change:permissions', function() {
-			if (determineLinkBox(view.$el.find('#linkText'))) {
-				replaceUrl2(view.$el.find('#linkText'));
-			} else if (determineLinkBox(view.$el.find('#linkText-view15'))) {
-				replaceUrl2(view.$el.find('#linkText-view15'));
+			if (determineLinkBox(view.$el.find('.linkText'))) {
+				replaceUrl2(view.$el.find('.linkText'));
+			} else if (determineLinkBox(view.$el.find('.linkText-view15'))) {
+				replaceUrl2(view.$el.find('.linkText-view15'));
 			}
 		});
 		this.model.on('change:linkShare', function() {
-			if (determineLinkBox(view.$el.find('#linkText'))) {
-				replaceUrl2(view.$el.find('#linkText'));
-			} else if (determineLinkBox(view.$el.find('#linkText-view15'))) {
-				replaceUrl2(view.$el.find('#linkText-view15'));
+			if (determineLinkBox(view.$el.find('.linkText'))) {
+				replaceUrl2(view.$el.find('.linkText'));
+			} else if (determineLinkBox(view.$el.find('.linkText-view15'))) {
+				replaceUrl2(view.$el.find('.linkText-view15'));
 			}
 		});
 	}
